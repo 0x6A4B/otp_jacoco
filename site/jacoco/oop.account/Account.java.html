@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Account.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">otp</a> &gt; <a href="index.source.html" class="el_package">oop.account</a> &gt; <span class="el_source">Account.java</span></div><h1>Account.java</h1><pre class="source lang-java linenums">package oop.account;
+
+public class Account {
+    /*
+
+    Implement the Account class in Account.java.
+    The Account class must include the following methods and member variables:
+        A double member variable to hold the current account balance.
+        public Account() {...}: The default constructor should initialize the balance to 0.0.
+        public void deposit(double amount) {...}: A deposit method to add money to the account.
+        public double withdraw(double amount) {...}: A withdraw method that withdraws the given amount from the account. If the amount given can be withdrawn, it should return that amount. If not, it should return 0.0.
+        public double getBalance() {...}: A method to get the current balance in the account.
+
+
+     */
+
+<span class="fc" id="L17">    private double balance = 0.0;</span>
+
+<span class="fc" id="L19">    public Account(){}</span>
+<span class="fc" id="L20">    public void deposit(double amount){ this.balance += amount; }</span>
+    public double withdraw(double amount){
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        if (this.balance &gt;= amount){</span>
+<span class="fc" id="L23">            this.balance -= amount;</span>
+<span class="fc" id="L24">            return amount;</span>
+        }
+<span class="fc" id="L26">        return 0.0;</span>
+    }
+<span class="fc" id="L28">    public double getBalance(){ return this.balance; }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
