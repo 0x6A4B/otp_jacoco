@@ -15,13 +15,8 @@ public class Library {
 
 <span class="fc" id="L16">    public void addBook(String book){ books.add(book); }</span>
     public void removeBook(String book){
-<span class="pc bpc" id="L18" title="1 of 2 branches missed.">        for(String b : books )</span>
-<span class="pc bpc" id="L19" title="1 of 2 branches missed.">            if(b.equals(book)) {</span>
-<span class="fc" id="L20">                books.remove(b);</span>
-<span class="fc" id="L21">                break;</span>
-            }
-<span class="fc" id="L23">        return;</span>
-    }
-<span class="fc" id="L25">    public List&lt;String&gt; listBooks(){ return books; }</span>
+<span class="fc" id="L18">        books.remove(book);</span>
+<span class="fc" id="L19">    }</span>
+<span class="fc" id="L20">    public List&lt;String&gt; listBooks(){ return books; }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
